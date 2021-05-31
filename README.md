@@ -1,3 +1,3 @@
 :whale: Dockerfiles for Firefox with Chinese Font
 
-based on [jlesage/docker-firefox](https://github.com/jlesage/docker-firefox)
+based on [linuxserver/firefox](https://github.com/linuxserver/docker-firefox)
