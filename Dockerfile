@@ -4,5 +4,5 @@
 
 FROM linuxserver/firefox
 
-RUN apk add --update --no-cache wqy-zenhei --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
+RUN apk add --update --no-cache font-wqy-zenhei --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ \
   && rm -rf /tmp/* /var/cache/apk/*
