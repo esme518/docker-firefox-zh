@@ -4,5 +4,8 @@
 
 FROM linuxserver/firefox
 
-RUN apk add --update --no-cache font-wqy-zenhei --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ \
-  && rm -rf /tmp/* /var/cache/apk/*
+RUN set -ex \
+    && apt-get update && apt-get install -y \
+       fonts-noto-cjk \
+    && apt-get clean \
+    && rm -rf /tmp/* /var/lib/apt/lists/*
